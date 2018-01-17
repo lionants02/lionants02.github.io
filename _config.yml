@@ -5,28 +5,22 @@ url:              https://liberxue.github.io # 域名
 signoff:          "LiberXue" # Your name
 facebook_appid:   #liberxue
 google_analytics: UA-101222464-1
-share:            true 
+share:            true
 # 分页
 paginate: 15
 paginate_path: "liberxuepage:num"
 gems: [jekyll-paginate]
 links:
-  - name:         首页
+  - name:         หน้าแรก
     url:          /
     external:     false
-  - name:         书籍
+  - name:         คลังเนื้อหา
     url:          /book
     external:     false
-  - name:         旅游
-    url:          /road
-    external:     false
-  - name:         归档
-    url:          /archives
-    external:     false
-  - name:         标签
+  - name:         แท๊กเนื้อหา
     url:          /tags
     external:     false
-  - name:         关于
+  - name:         เกี่ยวกับฉัน
     url:          /about
     external:     false
 # ------------ CONFIGURABLE END ------------
