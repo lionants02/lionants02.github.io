@@ -10,9 +10,9 @@
 <body class="" gtools_scp_screen_capture_injected="true">
 <header id="header" class="header bg-white">
     <div class="navbar-container">
-      <a href="/?liberxue" title="访问 {{site.title }}" class="navbar-logo"> <img src="{{ site.url }}/style/images/logo-liberxue.png" alt="{{ site.title }}"> </a>
+      <a href="/?liberxue" title="ค้นหาตาม  {{site.title }}" class="navbar-logo"> <img src="{{ site.url }}/style/images/logo-liberxue.png" alt="{{ site.title }}"> </a>
         <div class="navbar-menu">
-            {% for link in site.links %}             
+            {% for link in site.links %}
             <a href="{% unless link.external %}{{ site.url }}{% endunless %}{{ link.url }}">{{ link.name }}</a>
                 {% endfor %}
           </div>
@@ -20,14 +20,14 @@
             <span class="icon-search"></span>
             <form id="cb-search-btn" role="search">
          <span class="search-box">
-         <input type="text" class="input" id="cb-search-content" required="true" placeholder="标题 标签..." maxlength="30" autocomplete="off">
+         <input type="text" class="input" id="cb-search-content" required="true" placeholder="ป้ายชื่อ..." maxlength="30" autocomplete="off">
         </span>
             </form>
         </div>
         <div class="navbar-mobile-menu" onclick="">
             <span class="icon-menu cross"><span class="middle"></span></span>
             <ul>
-               {% for link in site.links %}           
+               {% for link in site.links %}
                 <li><a href="{% unless link.external %}{{ site.url }}{% endunless %}{{ link.url }}">{{ link.name }}</a></li>
                  {% endfor %}
             </ul>
@@ -40,31 +40,31 @@
 		<div class="post-header-thumb-container">
     <h1 class="post-title" itemprop="name headline">
 	{{ page.title }}</h1>
-		 <div class="post-data">  
+		 <div class="post-data">
 	 <time datetime="{{ page.date | date: '%F %H:%M:%S'}}" itemprop="datePublished">发布时间：{{ page.date | date: "%F %H:%M:%S"}}</time>
-     <a href="/tags#{{ page.category }}" title="访问 {{ page.category }}" data-hover="博客分类: {{ page.category }}">博客分类: {{ page.category }}</a>
-    <a href="#read"> 阅读次数: comments</a> 
+     <a href="/tags#{{ page.category }}" title="ค้นหาตาม  {{ page.category }}" data-hover="博客分类: {{ page.category }}">博客分类: {{ page.category }}</a>
+    <a href="#read"> เวลาในการอ่าน: comments</a>
 			</div>
             <div class="post-tags">
                 {% unless page.tags == empty %}
       {% assign tags_list = page.tags %}
       {% if tags_list.first[0] == null %}
-      {% for tag in tags_list %} 
-          <a href="/tags#{{ tag }}" title="访问{{ tag }}" data-hover="{{ tag }}">
+      {% for tag in tags_list %}
+          <a href="/tags#{{ tag }}" title="ค้นหาตาม {{ tag }}" data-hover="{{ tag }}">
           {{ tag }} <span>({{ site.tags[tag].size }})</span>
           {% unless forloop.last %}{% endunless %}
 </a>
       {% endfor %}
       {% else %}
-      {% for tag in tags_list %} 
-          <a href="/tags#{{ tag[0] }}" title="访问 {{ tag[0] }}" data-hover="{{tag[0]}}">
+      {% for tag in tags_list %}
+          <a href="/tags#{{ tag[0] }}" title="ค้นหาตาม {{ tag[0] }}" data-hover="{{tag[0]}}">
             {{ tag[0] }} <span>({{ tag[1].size }})</span>
             {% unless forloop.last %}{% endunless %}
           </a>
       {% endfor %}
       {% endif %}
       {% assign tags_list = nil %}
-    {% endunless %} 
+    {% endunless %}
 	</div>
 </div>
 </div></div>
@@ -81,21 +81,21 @@
     {% unless page.tags == empty %}
       {% assign tags_list = page.tags %}
       {% if tags_list.first[0] == null %}
-      {% for tag in tags_list %} 
-          <a href="/tags#{{ tag }}" title="访问{{ tag }}" data-hover="{{ tag }}">
+      {% for tag in tags_list %}
+          <a href="/tags#{{ tag }}" title="ค้นหาตาม {{ tag }}" data-hover="{{ tag }}">
           {{ tag }} <span>({{ site.tags[tag].size }})</span>
           {% unless forloop.last %}{% endunless %}</a>
       {% endfor %}
       {% else %}
-      {% for tag in tags_list %} 
-          <a href="/tags#{{ tag[0] }}" title="访问{{ tag[0] }}"  data-hover="{{ tag[0] }}">
+      {% for tag in tags_list %}
+          <a href="/tags#{{ tag[0] }}" title="ค้นหาตาม {{ tag[0] }}"  data-hover="{{ tag[0] }}">
             {{ tag[0] }} <span>({{ tag[1].size }})</span>
             {% unless forloop.last %}{% endunless %}
           </a>
       {% endfor %}
       {% endif %}
       {% assign tags_list = nil %}
-    {% endunless %} 
+    {% endunless %}
 </p>
 {{ content }}
 		<p class="post-info">
@@ -205,8 +205,8 @@ var postDirectoryBuild = function() {
             li = document.createElement('li');
             link = document.createElement('a');
             link.href = '#' + titleId[i];
-            link.title = '访问' + titleId[i];
-            link.title = '访问' + titleId[i];
+            link.title = 'ค้นหาตาม ' + titleId[i];
+            link.title = 'ค้นหาตาม ' + titleId[i];
             link.innerHTML = !isDirNum ? contentArr[i] :
                 dirNum.join('.') + ' ' + contentArr[i] ;
             li.appendChild(link);
@@ -219,6 +219,6 @@ var postDirectoryBuild = function() {
 postDirectoryBuild();
 </script>
   <script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script >lang=hljs.initHighlightingOnLoad();</script>   
+<script >lang=hljs.initHighlightingOnLoad();</script>
  </body>
 </html>
