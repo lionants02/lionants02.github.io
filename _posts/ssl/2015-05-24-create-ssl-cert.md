@@ -42,4 +42,4 @@ tags:
     โดยเครื่อง ที่จะเชื่อมต่อ ต้อง Trust rootCA.cer ก่อน
 
 ## อ้างอิง
-https://blog.didierstevens.com/2013/05/08/howto-make-your-own-cert-and-revocation-list-with-openssl/  
+[https://blog.didierstevens.com/2013/05/08/howto-make-your-own-cert-and-revocation-list-with-openssl/](https://blog.didierstevens.com/2013/05/08/howto-make-your-own-cert-and-revocation-list-with-openssl/)  
