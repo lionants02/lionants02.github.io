@@ -34,6 +34,8 @@ tags:
   `$ openssl genrsa -out device.key 4096`
   2. สร้าง Device cert ด้วยคำสั่ง  
   `$ openssl req -new -key device.key -out device.csr`  
+    - กรอกรายละเอียดให้ครบ ในส่วนของ **Common Name (e.g. server FQDN or YOUR name)** สำคัญมาก ถ้าระบบอ้างโดยโดเมนเนม ให้ใส่ชื่อโดเมนเนมของ Device แต่หากอ้างโดย IP ให้ใส่ IP ไม่งั้นกุญแจจะไม่เขียว  
+    - Common Name หากกรอกผิดมีส่วนทำให้เป็น**กุญแจแดง**
   3. สร้าง Public Device cert ที่ผ่านการรับรองด้วย Root โดยใช้คำสั่ง  
   `$ openssl x509 -req -in device.csr -CA rootCA.cer -CAkey rootCA.key -CAcreateserial -out device.cer -days 365`  
   เวลา Device นำไปใช้งาน เช่น ใช้กับ Server ที่เป็น Nginx ssl ให้ใช้
