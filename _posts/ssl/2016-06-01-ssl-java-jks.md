@@ -46,7 +46,9 @@ tags:
 ## การนำไปใช้งาน
 
 [มีวิธีการใช้งานใน Client คลิก][how-client-programm]  
-[การใช้งาน Android รับรอง 2 ทิศทาง][how-android-programm]
+[การใช้งาน Android รับรอง 2 ทิศทาง][how-android-programm]  
+
+
 [how-root]: https://lionants02.github.io/2015/05/24/create-ssl-cert.html
 [how-client-programm]: https://stackoverflow.com/questions/875467/java-client-certificates-over-https-ssl
 [how-android-programm]: http://callistaenterprise.se/blogg/teknik/2011/11/24/creating-self-signed-certificates-for-use-on-android/
