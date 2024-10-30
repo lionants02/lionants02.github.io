@@ -2,8 +2,8 @@
 layout: blog
 book: true
 title:  "การตั้งค่าเริ่มต้น Docker Swarm"
-background: green
-background-image: http://ot1cc1u9t.bkt.clouddn.com/17-7-15/78939382.jpg
+background: blue
+background-image: /archives/image/DALL·E 2024-10-30 23.02.25 person reading.webp
 date:   2018-01-17 12:09:34
 category: docker
 tags:
