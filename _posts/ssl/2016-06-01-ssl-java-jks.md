@@ -3,7 +3,7 @@ layout: blog
 book: true
 title:  "ใบรับรอง SSL สำหรับใช้ใน JAVA"
 background: green
-background-image: /image/ssl-x509-DALL·E.webp
+background-image: /archives/image/ssl-x509-DALL·E.webp
 date:   2016-06-01 22:27:39
 category: ssl
 tags:
