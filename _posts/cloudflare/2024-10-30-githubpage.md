@@ -3,7 +3,7 @@ layout: blog
 book: true
 title:  "การใช้ Github page ใน cloudflare"
 background: green
-background-image: http://ot1cc1u9t.bkt.clouddn.com/17-7-15/78939382.jpg
+background-image: /image/githubpage-cloudflare-DALL·E.webp
 date:   2024-10-30 06:09:15
 category: cloudflare
 tags:

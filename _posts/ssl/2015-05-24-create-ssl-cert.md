@@ -3,7 +3,7 @@ layout: blog
 book: true
 title:  "ใบรับรอง SSL และการรับรอง SSL"
 background: green
-background-image: http://ot1cc1u9t.bkt.clouddn.com/17-7-15/78939382.jpg
+background-image: /image/ssl-x509-DALL·E.webp
 date:   2015-05-24 08:12:28
 category: ssl
 tags:
